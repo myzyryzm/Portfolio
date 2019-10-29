@@ -1,6 +1,7 @@
 let resumeData = {
     "imagebaseurl":"https://rbhatia46.github.io/",
-    "name": "Rahul Bhatia",
+    "name": "Ryan Young",
+    "firstName": "Ryan",
     "role": "Frontend Developer and Data Scientist",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
@@ -8,23 +9,23 @@ let resumeData = {
     "socialLinks":[
         {
           "name":"linkedin",
-          "url":"https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
+          "url":"",
           "className":"fa fa-linkedin"
         },
         {
           "name":"github",
-          "url":"http://github.com/rbhatia46",
+          "url":"https://github.com/myzyryzm",
           "className":"fa fa-github"
         },
         {
-          "name":"skype",
-          "url":"http://twitter.com/rbhatia46",
+          "name":"twitter",
+          "url":"",
           "className":"fa fa-twitter"
         }
       ],
     "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
-    "address":"India",
-    "website":"https://rbhatia46.github.io",
+    "address":"San Diego, California",
+    "website":"",
     "education":[
       {
         "UniversityName":"The LNM Insitute of Information Technology",
@@ -71,24 +72,28 @@ let resumeData = {
     ],
     "portfolio":[
       {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "name":"RZ Drift",
+        "description":"Mobile Racing Game",
+        "imgurl":"images/portfolio/rz_drift_logo.jpeg",
+        "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
       },
       {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
+        "name":"BattleThrones",
+        "description":"Game of Thrones Themed Battleship",
+        "imgurl":"images/portfolio/battlethrones.jpeg",
+        "link": ""
       },
       {
         "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
+        "description":"mobileapp",
+        "imgurl":"images/portfolio/project2.png",
+        "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
       },
       {
         "name":"project4",
         "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
+        "imgurl":"images/portfolio/phone.jpg",
+        "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
       }
     ],
     "testimonials":[
@@ -102,5 +107,5 @@ let resumeData = {
       }
     ]
   }
-  
+
   export default resumeData

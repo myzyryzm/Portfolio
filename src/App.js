@@ -10,12 +10,20 @@ import resumeData from './resumeData';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className = "App">
+        <div className="page-bg"></div>
+
+        <div className="animation-wrapper">
+          <div className="particle particle-1"></div>
+          <div className="particle particle-2"></div>
+          <div className="particle particle-3"></div>
+          <div className="particle particle-4"></div>
+        </div>
+
         <Header resumeData={resumeData}/>
         <About resumeData={resumeData}/>
         <Resume resumeData={resumeData}/>
         <Portfolio resumeData={resumeData}/>
-        <Testimonials resumeData={resumeData}/>
         <ContactUs resumeData={resumeData}/>
         <Footer resumeData={resumeData}/>
       </div>
