@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 .App {
-  position: relative;
+  /* position: relative; */
   /* height: 800px;
   min-height: 500px;
   width: 100%; */
@@ -203,6 +203,18 @@ ul#nav li.current a { color: #EB97EA; }
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
+#about .container {
+    max-width: 70rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: -2rem auto -2rem auto;
+    /* border-radius: 5px; */
+    /* background-color: #f2f2f2; */
+    padding: 2rem;
+}
 
 #about {
    background: #fff;
@@ -210,6 +222,9 @@ ul#nav li.current a { color: #EB97EA; }
    padding-bottom: 66px;
    margin: 100px;
    overflow: hidden;
+   padding: 10% 0;
+   z-index: 2;
+   position: relative;
 }
 
 #about a, #about a:visited  { color: #fff; }
@@ -242,6 +257,24 @@ ul#nav li.current a { color: #EB97EA; }
 #about .download .button i {
    margin-right: 15px;
    font-size: 20px;
+}
+
+#about .header-break {
+    background: #000;
+    opacity: 0.25;
+    display: flex;
+    align-self: center;
+    height: 2px;
+    /* width: 100px; */
+    /* width: 10rem; */
+    margin: 1rem 0;
+}
+
+#about .header-parent {
+  /* width: 100px;
+  align-self: center;
+  border-color: #fff;
+  border-width: thick; */
 }
 
 
