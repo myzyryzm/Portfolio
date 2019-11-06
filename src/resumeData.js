@@ -8,20 +8,15 @@ let resumeData = {
     "roleDescription": "REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED",
     "socialLinks":[
         {
-          "name":"linkedin",
-          "url":"",
-          "className":"fa fa-linkedin"
-        },
-        {
           "name":"github",
           "url":"https://github.com/myzyryzm",
           "className":"fa fa-github"
         },
-        {
-          "name":"twitter",
-          "url":"",
-          "className":"fa fa-twitter"
-        }
+        // {
+        //   "name":"linkedin",
+        //   "url":"",
+        //   "className":"fa fa-linkedin"
+        // }
       ],
     "aboutme":"REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED",
     "address":"San Diego, California",
@@ -82,18 +77,6 @@ let resumeData = {
         "description":"Game of Thrones Themed Battleship",
         "imgurl":"images/portfolio/battlethrones.jpeg",
         "link": ""
-      },
-      {
-        "name":"project3",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project2.png",
-        "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
-      },
-      {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg",
-        "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
       }
     ],
     "testimonials":[
