@@ -20,7 +20,7 @@ export default class About extends Component {
             <div className="principle-item">
               <img src={frontEnd} alt="" />
               <h3>Front-End</h3>
-              <p className="principle-p"></p>
+              <p className="principle-p">SEVERAL WORDS WILL BE HERE</p>
             </div>
 
             <div className="diamond-container">
@@ -30,7 +30,7 @@ export default class About extends Component {
             <div className="principle-item">
               <img src={backEnd} alt="" />
               <h3>Back-End</h3>
-              <p className="principle-p"></p>
+              <p className="principle-p">REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED</p>
             </div>
 
             <div className="diamond-container">
@@ -40,11 +40,23 @@ export default class About extends Component {
             <div className="principle-item">
               <img src={controller} alt="" />
               <h3>Video Game</h3>
-              <p className="principle-p"></p>
+              <p className="principle-p">WORD ANOTHERWORD TWOMORE WORDS LONGWORDBEFOREASHORT ONE </p>
             </div>
           </div>
+          <h5 className = "title">Tech Skills</h5>
+           <div className="technologies-list"></div>
          </div>
+         <div className="principles-2">
+            <div className="principle-item-2">
+              
+            </div>
 
+            <div className="diamond-container">
+              <span className="diamond diamond-mobile"></span>
+            </div>
+
+            
+          </div>
       </section>
     );
   }

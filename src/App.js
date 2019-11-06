@@ -29,7 +29,6 @@ class App extends Component {
         <Header resumeData={resumeData}/>
         <About resumeData={resumeData}/>
         <Portfolio resumeData={resumeData}/>
-        <ContactUs resumeData={resumeData}/>
         <Footer resumeData={resumeData}/>
       </div>
     );
