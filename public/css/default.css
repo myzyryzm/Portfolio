@@ -36,7 +36,20 @@ e. Others
       Normalize.css - https://github.com/necolas/normalize.css/
       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
 /* ------------------------------------------------------------------ */
-
+:root {
+   --color-1: #559BF0;
+   --color-2: #5FA1F5;
+   --color-3: #738BE3;
+   --color-4: #95A6FF;
+   --color-5: #9A80E1;
+   --color-6: #EDC4FC;
+   --color-7: #5F427A;
+   --color-8: #DF6BDA;
+   --color-9: #83A2FD;
+   --screenWidth: 1000;
+   --screenHeight: 1000;
+   --font: 'edgeracerbevelregular'
+ }
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -143,7 +156,7 @@ html {
 
 body {
    background: #fff;
-   font-family: 'opensans-regular', sans-serif;
+   font-family: var(--font);
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
@@ -158,8 +171,8 @@ body {
 --------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-   color: #313131;
-	font-family: 'opensans-bold', sans-serif;
+   color: black;
+	font-family: var(--font);
    font-weight: normal;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }

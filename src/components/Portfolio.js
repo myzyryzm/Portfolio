@@ -1,47 +1,101 @@
 import React, { Component } from 'react';
-let port = [
+import csharplogo from './Images/cSharpLogo.png';
+import unitylogo from './Images/unity.png';
+import reactlogo from './Images/reactlogo.png';
+import javascriptlogo from './Images/javascriptlogo.png';
+import reduxlogo from './Images/reduxlogo.png';
+import djangologo from './Images/djangologo.png';
+import pythonlogo from './Images/pythonlogo.png';
+
+let projects = [
   {
     "name":"RZ Drift",
-    "description":"Mobile Racing Game",
-    "imgurl":"images/portfolio/rz_drift_logo.jpeg",
-    "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
+    "description":"RZ Drift takes drifting to a whole new level. Realistic physics in fantastical environments create an unreal driving experience",
+    "logo":"images/portfolio/rz_drift_logo.jpeg",
+    'gif':'images/portfolio/rz_drift_gif.gif',
+    "link": "https://apps.apple.com/us/app/rz-drift/id1467063778",
+    "techLogos": [
+      <div className="principle-item-p">
+        <img src={csharplogo} alt="" />
+      </div>, 
+      <div className="principle-item-p" />,
+      <div className="principle-item-p">
+        <img src={unitylogo} alt="" />
+      </div> ]
   },
   {
-    "name":"RZ Drift",
-    "description":"Mobile Racing Game",
-    "imgurl":"images/portfolio/rz_drift_logo.jpeg",
-    "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
+    "name":"Battlethrones",
+    "description":"Fight for the fate of the Seven Kingdoms in this Game of Thrones themed Battleship game.",
+    "logo":"images/portfolio/battlethroneslogo.png",
+    'gif':'images/portfolio/battlethronesgif.gif',
+    "link": "https://apps.apple.com/us/app/rz-drift/id1467063778",
+    "techLogos": [
+    <div className="principle-item-p">
+      <img src={javascriptlogo} alt="" />
+    </div>, 
+    <div className="principle-item-p" />,
+    <div className="principle-item-p">
+      <img src={reactlogo} alt="" />
+    </div> ]
   },
   {
-    "name":"RZ Drift",
-    "description":"Mobile Racing Game",
-    "imgurl":"images/portfolio/rz_drift_logo.jpeg",
-    "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
+    "name":"Digital Class",
+    "description":"An online classroom forum where students can discuss the material they are learning in class.",
+    "logo":"images/portfolio/digitalclasslogo.png",
+    'gif':'images/portfolio/digitalclassgif.gif',
+    "link": "https://apps.apple.com/us/app/rz-drift/id1467063778",
+    "techLogos": [
+    <div className="principle-item-p-2">
+      <img src={javascriptlogo} alt="" />
+    </div>, 
+    <div className="principle-item-p-3" />,
+    <div className="principle-item-p-2">
+      <img src={reactlogo} alt="" />
+    </div>, 
+    <div className="principle-item-p-3" />,
+    <div className="principle-item-p-2">
+      <img src={reduxlogo} alt="" />
+    </div>,
+    <div className="principle-item-p-3" />,
+    <div className="principle-item-p-2">
+      <img src={djangologo} alt="" />
+    </div>,
+    <div className="principle-item-p-3" />,
+    <div className="principle-item-p-2">
+      <img src={pythonlogo} alt="" />
+    </div>,
+    <div className="principle-item-p-3" />,
+    ]
   },
-  {
-    "name":"RZ Drift",
-    "description":"Mobile Racing Game",
-    "imgurl":"images/portfolio/rz_drift_logo.jpeg",
-    "link": "https://apps.apple.com/us/app/rz-drift/id1467063778"
-  }
 ]
-// {
-//   "name":"BattleThrones",
-//   "description":"Game of Thrones Themed Battleship",
-//   "imgurl":"images/portfolio/battlethrones.jpeg",
-//   "link": ""
-// },
 const screenWidth = {
   "--screenWidth": "1000"
 };
 const screenHeight = {
   "--screenHeight": "1000"
 };
+let projectGrid = []
 export default class Porfolio extends Component {
   constructor(props) {
     super(props);
     this.state = { width: 0, height: 0 };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    projectGrid = projects.map((project, i) => {
+      return(
+        <div className = "grid2" key = {i.toString()}>
+          <a className = "gridSquareLeft" href={project.link} target="_blank">
+              <img className = "gridLogo" src={project.logo}/>
+              <div className={project.name != "Digital Class" ? "principles-p": "principles-p-class"}>
+                {project.techLogos}
+              </div>
+          </a>
+          <a className = "gridSquare"></a>
+          <a className = "gridSquareRight" href={project.link} target="_blank">
+            <img className = "gridGif" src={project.gif}/>
+            <p className = "gridTitle">{project.description}</p>
+          </a>
+        </div>
+      )
+    })
   }
   
   componentDidMount() {
@@ -53,8 +107,7 @@ export default class Porfolio extends Component {
     window.removeEventListener('resize', this.updateWindowDimensions);
   }
   
-  updateWindowDimensions() {
-    console.log(window.innerWidth)
+  updateWindowDimensions = () => {
     Object.keys(screenWidth).map(key => {
       screenWidth[key] = window.innerWidth
       const value = screenWidth[key];
@@ -65,42 +118,14 @@ export default class Porfolio extends Component {
       const value = screenHeight[key];
       document.documentElement.style.setProperty(key, value);
     });
-    console.log(screenWidth["--screenWidth"])
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
-
-
   render() {
-    let grid = []
-    let gridRows = 2 * Math.ceil(port.length * 0.5) -1
-    let gridSquares = 3 * gridRows
-    let portDex = 0
-    for(let i = 0; i < gridSquares; i++){
-      let curRow = i < 3 ? 0 : (i - i % 3) / 3
-      let addRow = curRow < 1 || curRow % 2 == 0
-      let isEven = i == 0 || i % 2 == 0
-      if(!addRow || !isEven){
-        grid.push(<a className = "gridSquare"></a>)
-      }
-      else {
-        grid.push(<a className = "gridSquare" href={port[portDex].link} target="_blank">
-                      <img className = "gridImage" src={`${port[portDex].imgurl}`}/>
-                      <h1 className = "gridTitle" >Title Is Cool</h1>
-                  </a>)
-        portDex++
-      }
-    }
     return (
       <section id="portfolio">
-          <div>
-            <div>
-              <div className = "grid">
-                {grid}
-              </div>
-            </div>
-          </div>
+        {projectGrid}
       </section>
-        );
+    );
   }
 }

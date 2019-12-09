@@ -6,7 +6,9 @@
 
 /* ================================================================== */
 
-
+:root {
+   --font: 'edgeracerregular'
+ }
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
@@ -14,7 +16,7 @@
     /* header styles
    ------------------------------------------------------------------ */
    header .banner-text h1 {
-      font: 80px/1.1em 'opensans-bold', sans-serif;
+      font: 80px/1.1em var(--font), sans-serif;
       letter-spacing: -1px;
       margin: 0 auto 12px auto;
    }
@@ -29,11 +31,11 @@
    ------------------------------------------------------------------ */
    header .banner { padding-bottom: 12px; }
    header .banner-text h1 {
-      font: 78px/1.1em 'opensans-bold', sans-serif;
+      font: 78px/1.1em var(--font), sans-serif;
       letter-spacing: -1px;      
    }
    header .banner-text h3 {
-      font: 17px/1.9em 'librebaskerville-regular', serif;
+      font: 17px/1.9em var(--font), serif;
       width: 80%;
    }
    header .banner-text hr {
@@ -42,7 +44,7 @@
    }
    /* nav-wrap */
    #nav-wrap {
-      font: 11px 'opensans-bold', sans-serif;
+      font: 11px var(--font), sans-serif;
       letter-spacing: 1.5px;
    }
 
@@ -59,7 +61,7 @@
 
    /* Resume Section
    ------------------------------------------------------------------- */
-   #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
+   #resume h1 { font: 16px/24px var(--font), sans-serif; }
    #resume .main-col { padding-right: 5%; }   
 
    /* Testimonials Section
@@ -87,7 +89,7 @@
       font-size: 66px;
       line-height: 66px;
    }
-   #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
+   #contact .section-head p.lead { font: 17px/33px var(--font), sans-serif; }
 
 
 }
@@ -100,7 +102,7 @@
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
-      font: 12px 'opensans-bold', sans-serif;
+      font: 12px var(--font), sans-serif;
       background: transparent !important;
       letter-spacing: 1.5px;  
       width: auto;
@@ -191,9 +193,9 @@
       padding-bottom: 12px;
       padding-top: 6px;
    }
-   header .banner-text h1 { font: 68px/1.1em 'opensans-bold', sans-serif; }
+   header .banner-text h1 { font: 68px/1.1em var(--font), sans-serif; }
    header .banner-text h3 {
-      font: 16px/1.9em 'librebaskerville-regular', serif;
+      font: 16px/1.9em var(--font), serif;
       width: 85%;
    }
    header .banner-text hr {
@@ -242,7 +244,7 @@
    /* ----------------------------------------------------------------- */
    #call-to-action { text-align: center; }
    #call-to-action h1 {
-      font: 16px/24px 'opensans-bold', sans-serif;
+      font: 16px/24px var(--font), sans-serif;
       text-align: center;
       margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
@@ -287,7 +289,7 @@
    #contact { padding-bottom: 66px; }
    #contact .section-head { margin-bottom: 12px; }
    #contact .section-head h1 {
-      font: 16px/24px 'opensans-bold', sans-serif;            
+      font: 16px/24px var(--font), sans-serif;            
       text-align: center;   
       margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
@@ -338,6 +340,81 @@
 
 }
 
+@media only screen and (max-width: 1000px) { 
+   .flexTitle {
+      font-size: 10px;
+   }
+}
+
+@media only screen and (max-width: 800px) { 
+   .flexTitle {
+      font-size: 8px;
+   }
+}
+
+@media only screen and (max-width: 600px) { 
+   .flexTitle {
+      font-size: 6px;
+      color: black;
+   }
+}
+
+@media only screen and (max-width: 1000px) { 
+   .gridTitle {
+      font-size: 12px;
+      line-height: 1.8em;
+   }
+}
+
+@media only screen and (max-width: 800px) { 
+   .gridTitle {
+      font-size: 10px;
+      line-height: 1.6em;
+   }
+}
+
+@media only screen and (max-width: 700px) { 
+   .gridTitle {
+      font-size: 9px;
+      line-height: 1.5em;
+   }
+}
+
+@media only screen and (max-width: 600px) { 
+   .gridTitle {
+      font-size: 8px;
+      line-height: 1.35em;
+   }
+}
+
+@media only screen and (max-width: 500px) { 
+   .gridTitle {
+      font-size: 7px;
+      line-height: 1.2em;
+   }
+}
+
+@media only screen and (max-width: 450px) { 
+   .gridTitle {
+      font-size: 6px;
+      line-height: 1.05em;
+   }
+}
+
+@media only screen and (max-width: 400px) { 
+   .gridTitle {
+      font-size: 5px;
+   }
+}
+
+@media only screen and (max-width: 350px) { 
+   .gridTitle {
+      font-size: 4px;
+      line-height: 1em;
+   }
+}
+
+
 /* mobile narrow
   -------------------------------------------------------------------------- */
 
@@ -351,11 +428,11 @@
    -------------------------------------------------------------------- */
    header .banner { padding-top: 24px; }
    header .banner-text h1 {
-      font: 40px/1.1em 'opensans-bold', sans-serif;      
+      font: 40px/1.1em var(--font), sans-serif;      
       margin: 0 auto 24px auto;
    }
    header .banner-text h3 {
-      font: 14px/1.9em 'librebaskerville-regular', sans-serif;
+      font: 14px/1.9em var(--font), sans-serif;
       width: 90%;
    }
   

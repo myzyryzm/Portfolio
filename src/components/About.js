@@ -23,9 +23,7 @@ export default class About extends Component {
               <p className="principle-p">SEVERAL WORDS WILL BE HERE</p>
             </div>
 
-            <div className="diamond-container">
-              <span className="diamond diamond-mobile"></span>
-            </div>
+            
 
             <div className="principle-item">
               <img src={backEnd} alt="" />
@@ -33,9 +31,7 @@ export default class About extends Component {
               <p className="principle-p">REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED REDACTED</p>
             </div>
 
-            <div className="diamond-container">
-              <span className="diamond diamond-mobile"></span>
-            </div>
+            
 
             <div className="principle-item">
               <img src={controller} alt="" />

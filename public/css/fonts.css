@@ -155,3 +155,74 @@
    }
 
 }
+
+@font-face {
+    font-family: 'cyberpunkregular';
+    src: url('webfontkit-20191208-181935/cyberpunk-regular-webfont.woff2') format('woff2'),
+         url('webfontkit-20191208-181935/cyberpunk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'outrunfuture';
+    src: url('outrunfuture/outrun_future_bold-webfont.woff2') format('woff2'),
+         url('outrunfuture/outrun_future_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cyberspaceracewayback';
+    src: url('cyberspaceraceway/cyberspace_raceway_back-webfont.woff2') format('woff2'),
+         url('cyberspaceraceway/cyberspace_raceway_back-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cyberspaceracewayfront';
+    src: url('cyberspaceraceway/cyberspace_raceway_front-webfont.woff2') format('woff2'),
+         url('cyberspaceraceway/cyberspace_raceway_front-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'edgeracerbevelitalicitalic';
+    src: url('edgeracer/edgeracebevelital-webfont.woff2') format('woff2'),
+         url('edgeracer/edgeracebevelital-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'edgeracerregular';
+    src: url('edgeracer/edgeracer-webfont.woff2') format('woff2'),
+         url('edgeracer/edgeracer-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'edgeracerbevelregular';
+    src: url('edgeracer/edgeracebevel-webfont.woff2') format('woff2'),
+         url('edgeracer/edgeracebevel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

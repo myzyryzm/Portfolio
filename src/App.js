@@ -18,18 +18,17 @@ class App extends Component {
         <div className="comet-container">
             <div className="comet"/>
         </div>
-
         <div className="animation-wrapper">
           <div className="particle particle-1"></div>
           <div className="particle particle-2"></div>
           <div className="particle particle-3"></div>
           <div className="particle particle-4"></div>
         </div>
-
         <Header resumeData={resumeData}/>
         <About resumeData={resumeData}/>
         <Portfolio resumeData={resumeData}/>
         <Footer resumeData={resumeData}/>
+
       </div>
     );
   }
