@@ -7,7 +7,7 @@ export default class About extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="about">
-         <div className="container">
+         <div>
            <h5 className = "title">About Me</h5>
            <div className="technologies-list"></div>
            <p className="intro-p">{resumeData.aboutme}</p>

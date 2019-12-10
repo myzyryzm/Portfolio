@@ -30,19 +30,30 @@
   --color-6: #EDC4FC;
   --color-7: #5F427A;
   --color-8: #DF6BDA;
-  --color-9: #83A2FD;
+  --color-10: rgb(13, 70, 228);
+  --color-9: rgb(76, 28, 251);
   --screenWidth: 1000;
   --screenHeight: 1000;
   --font: 'edgeracerregular'
 }
 
 .App {
-  background: #000 url(../images/cargrid.jpg) no-repeat top center;
+  background: black url(../images/starry.jpg) no-repeat top center;
   background-size: cover !important;
  -webkit-background-size: cover !important;
   text-align: center;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.background {
+   z-index: 0;
+   background: #000 url(../images/cargrid.jpg) no-repeat top center;
+   background-size: cover !important;
+   -webkit-background-size: cover !important;
+   overflow-x: hidden;
+   /* height: 100%;
+   width: auto */
 }
 
 .moving-background {
@@ -119,7 +130,7 @@ header .banner {
    margin: 0 auto;
    width: 85%;
    padding-bottom: 30px;
-   text-align: center;
+   /* text-align: center; */
 }
 
 header .banner-text { width: 100%; }
@@ -128,7 +139,7 @@ header .banner-text h1 {
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+   /* text-shadow: 0px 1px 3px rgba(0, 0, 0, .8); */
 }
 header .banner-text h3 {
    font: 18px/1.9em var(--font), serif;
@@ -789,10 +800,11 @@ ul#nav li.current a { color: var(--color-9); }
    grid-template-columns: 1fr .1fr 2fr;
    margin: auto;
    align-self: center;
-   border: 1px solid black;
-   background-color: black;
+   /* border: 1px solid var(--color-9); */
+   background-color: rgba(0, 0, 0,1);
    border-radius: 5%;
    margin-bottom: 5vw;
+   z-index: 1;
  }
 
  .square{
@@ -869,7 +881,6 @@ ul#nav li.current a { color: var(--color-9); }
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
-   color: white;
    white-space: nowrap;
    overflow: visible;
    color: black;
@@ -1319,3 +1330,68 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: var(--color-9); }
+
+
+body {
+   background-color:black;
+   color: #FFF;
+   font-family: var(--font);
+   font-weight: 700;
+ }
+ 
+ .retroText {
+   display: block;
+   position: relative;
+   font-size: 100px;
+   background: linear-gradient(to bottom, #00f2ff 0%, #e2fbff 50%, #0a343f 51%, #0094f7 100%);
+   /* background-blend-mode: multiply; */
+   background-size: 10px 100px;
+   background-repeat: repeat;
+   line-height: 1;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   z-index: 1;
+   
+ }
+ .null::before {
+   background: none;
+   content: attr(data-text);
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: +2;
+   background-image: url("https://i.imgur.com/Ym9HCsT.gif");
+   /* background-blend-mode: screen; */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   opacity: 0.5;
+   width: 100%;
+ }
+ .retroText::after {
+   content: attr(data-text);
+   position: absolute;
+   left: 0;
+   top: 0;
+   text-shadow: 1px -1px 0 black, 3px 1px 3px var(--color-10), -3px -2px 3px var(--color-9), 1px -2px 0 rgb(255, 255, 255);
+   z-index: -2;
+   width:100%;
+ }
+
+ .retroTextAfter {
+   /* background: none; */
+   background: linear-gradient(to bottom, #00f2ff 0%, #e2fbff 50%, #0a343f 51%, #0094f7 100%);
+   -webkit-background-clip: text;
+   position: absolute;
+   left: 0;
+   top: 0;
+   text-shadow: 1px -1px 0 rgb(255, 255, 255), 3px 1px 3px rgba(255, 0, 255, 0.85), -3px -2px 3px rgba(0, 0, 255, 0.85), 1px -2px 0 rgb(255, 255, 255);
+   z-index: 0;
+   width:100%;
+ }
+
+ .retroContainer {
+    /* position: absolute; */
+    /* left: 200px; */
+    text-align: center;
+    width: 100%;
+ }
