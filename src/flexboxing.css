@@ -1,7 +1,3 @@
-:root {
-  --font: 'edgeracerregular'
-}
-
 .devTitle{
   font-family:var(--font), sans-serif;
   letter-spacing: 0px;
@@ -42,21 +38,27 @@
   }
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1250px){
   .devTitleSize {
     font-size: 36px
   }
 }
 
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: 1200px){
   .devTitleSize {
     font-size: 34px
   }
 }
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 1125px){
   .devTitleSize {
     font-size: 33px
+  }
+}
+
+@media only screen and (max-width: 1090px){
+  .devTitleSize {
+    font-size: 32px
   }
 }
 
@@ -66,15 +68,27 @@
   }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1025px){
   .devTitleSize {
     font-size: 30px
+  }
+}
+
+@media only screen and (max-width: 990px){
+  .devTitleSize {
+    font-size: 29px
   }
 }
 
 @media only screen and (max-width: 950px){
   .devTitleSize {
     font-size: 28px
+  }
+}
+
+@media only screen and (max-width: 925px){
+  .devTitleSize {
+    font-size: 27px
   }
 }
 
@@ -173,11 +187,15 @@
   background-color: rgba(0, 0, 0,1);
   border-radius: 5%;
   z-index: 1;
-  box-shadow: 3px 2px 3px var(--color-10), -3px 2px 3px var(--color-10), -3px -2px 3px var(--color-9), 3px -2px 3px var(--color-10);
+  box-shadow: 3px 2px 3px var(--color-10), -3px 2px 3px var(--color-10), -3px -2px 3px var(--color-10), 3px -2px 3px var(--color-10);
 }
 
 .flexParentWidth {
   width: 45%;
+}
+
+.aboutMeWidth {
+  width: 70%;
 }
 
 .topParent {
@@ -191,9 +209,10 @@
 }
 
 @media only screen and (max-width: 850px){
-  .flexParentWidth {
+  .aboutMeWidth, .flexParentWidth {
     width: 90%
   }
+  
 }
 
 .devFlexParent {
@@ -232,6 +251,7 @@
   margin-top: 50px;
   margin-left: 2.5%;
   margin-right: 2.5%;
+  height: min-content
 }
 
 .titleColumn {
@@ -312,4 +332,31 @@
 
 .devSkillLogo {
   /* margin-top: 40px; */
+  max-height: inherit;
+}
+
+.resumeButton {
+  color: white;
+  text-decoration: none;
+  background-color: var(--color-9);
+  padding: 5px;
+  margin-bottom: 2%;
+  border-radius: 5%;
+  font-family: var(--font);
+}
+
+.resumeFontSize {
+  font-size: 24px;
+}
+.resumeButton:hover {
+  background-color: white;
+  color: var(--color-9);
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
