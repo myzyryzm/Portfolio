@@ -12,10 +12,6 @@
   word-wrap: wrap;
 }
 
-.devTitleSize {
-  font-size: 42px;
-}
-
 .devTitle::after {
   content: attr(data-text);
   position: absolute;
@@ -26,15 +22,29 @@
   width:100%;
 }
 
+.devTitleSize {
+  font-size: 42px;
+}
+
+.aboutTitleSize {
+  font-size: 62px;
+}
+
 @media only screen and (max-width: 1400px){
   .devTitleSize {
     font-size: 40px
+  }
+  .aboutTitleSize {
+    font-size: 60px
   }
 }
 
 @media only screen and (max-width: 1300px){
   .devTitleSize {
     font-size: 38px
+  }
+  .aboutTitleSize {
+    font-size: 58px
   }
 }
 
@@ -108,6 +118,9 @@
   .devTitleSize {
     font-size: 36px
   }
+  .aboutTitleSize {
+    font-size: 56px
+  }
 }
 
 @media only screen and (max-width: 650px){
@@ -120,6 +133,9 @@
   .devTitleSize {
     font-size: 32px
   }
+  .aboutTitleSize {
+    font-size: 52px
+  }
 }
 
 @media only screen and (max-width: 550px){
@@ -131,6 +147,9 @@
 @media only screen and (max-width: 500px){
   .devTitleSize {
     font-size: 28px
+  }
+  .aboutTitleSize {
+    font-size: 48px
   }
 }
 
@@ -156,6 +175,9 @@
   .devTitleSize {
     font-size: 22px
   }
+  .aboutTitleSize {
+    font-size: 42px
+  }
 }
 
 @media only screen and (max-width: 375px){
@@ -173,6 +195,70 @@
 @media only screen and (max-width: 300px){
   .devTitleSize {
     font-size: 16px
+  }
+  .aboutTitleSize {
+    font-size: 36px
+  }
+}
+
+.devDescription{
+  margin: 0px;
+  font-family: var(--font);
+  /* font: 14px/20px 'opensans-semibold', sans-serif; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  line-height: 2em;
+  text-decoration: none;
+}
+
+.devDescriptionSize {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) { 
+  .devDescriptionSize {
+     font-size: 19px;
+     line-height: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 800px) { 
+  .devDescriptionSize {
+     font-size: 17px;
+     line-height: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 700px) { 
+  .devDescriptionSize {
+     font-size: 16px;
+     line-height: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .devDescriptionSize {
+     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) { 
+  .devDescriptionSize {
+     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 450px) { 
+  .devDescriptionSize {
+     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 400px) { 
+  .devDescriptionSize {
+     font-size: 12px;
   }
 }
 
@@ -247,10 +333,8 @@
 }
 
 .devSkillColumn {
-  width: 95%;
+  width: 80%;
   margin-top: 50px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
   height: min-content
 }
 
@@ -343,6 +427,14 @@
   margin-bottom: 2%;
   border-radius: 5%;
   font-family: var(--font);
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
 
 .resumeFontSize {
@@ -359,4 +451,63 @@
   -moz-transition: background-color .3s ease-in-out;
   -o-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
+}
+
+.gridTitle{
+  margin: 0px;
+  font-family: var(--font);
+  font-size: 18px;
+  /* font: 14px/20px 'opensans-semibold', sans-serif; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  line-height: 2em;
+  text-decoration: none;
+  margin-bottom: 2.5%;
+}
+
+@media only screen and (max-width: 1000px) { 
+  .gridTitle {
+     font-size: 17px;
+     line-height: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 800px) { 
+  .gridTitle {
+     font-size: 15px;
+     line-height: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 700px) { 
+  .gridTitle {
+     font-size: 14px;
+     line-height: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .gridTitle {
+     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 500px) { 
+  .gridTitle {
+     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 450px) { 
+  .gridTitle {
+     font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 400px) { 
+  .gridTitle {
+     font-size: 10px;
+  }
 }
