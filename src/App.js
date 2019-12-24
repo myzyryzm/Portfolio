@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
-import Testimonials from  './components/Testimonials';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
-import comet from './comet-solo-4.png';
-import galaxy from "./cargrid.jpg"
+import "./flexboxing.css"
 
 const screenWidth = {
   "--screenWidth": "1000"
@@ -50,7 +47,6 @@ class App extends Component {
   render() {
     return (
       <div className = "App">
-        {/* <div className = "background"></div> */}
         <div className="page-bg"></div>
         <div className="comet-container">
             <div className="comet"/>
@@ -62,8 +58,8 @@ class App extends Component {
           <div className="particle particle-4"></div>
         </div>
         <Header resumeData={resumeData}/>
-        {/* <About resumeData={resumeData}/> */}
-        <Portfolio resumeData={resumeData}/>
+        <About/>
+        <Portfolio/>
         <Footer resumeData={resumeData}/>
 
       </div>
