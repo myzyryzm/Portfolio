@@ -60,7 +60,7 @@ class App extends Component {
         <Header resumeData={resumeData}/>
         <About/>
         <Portfolio/>
-        <Footer resumeData={resumeData}/>
+        <Footer/>
 
       </div>
     );

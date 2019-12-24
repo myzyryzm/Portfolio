@@ -45,7 +45,7 @@ export default class About extends Component {
     <div className = "aboutMeWidth topParent">
       <div className = "flexParent">
         <div className = "titleColumn" >
-            <h1 className = "devTitle devTitleSize" data-text = "About Me">About Me</h1>
+            <h1 className = "devTitle aboutTitleSize" data-text = "About Me">About Me</h1>
         </div>
         <div className = "devSkillColumn" >
           <img src={getLogo("About Me")} className = "devSkillLogo" />
@@ -56,7 +56,7 @@ export default class About extends Component {
           </div>
         </div>
         <div className = "devDescriptionColumn" >
-          <p className = "gridTitle">software engineer who excels at critical thinking and is driven by an everlasting desire to solve problems.  a quick learner who will persevere through whatever challenges that may be encountered when finding solutions.  driven by a desire to innovate and make an impact on the world for the better.</p>
+          <p className = "devDescription devDescriptionSize">software engineer who excels at critical thinking and is driven by an everlasting desire to solve problems.  a quick learner who will persevere through whatever challenges that may be encountered when finding solutions.  driven by a desire to innovate and make an impact on the world for the better.</p>
         </div>
         <a className = "resumeButton resumeFontSize" href = {resume} target = "_blank">Resume</a>
       </div>
@@ -86,7 +86,7 @@ export default class About extends Component {
               </div>
             </div>
             <div className = "devDescriptionColumn" >
-              <p className = "gridTitle">{devSkill["description"]}</p>
+              <p className = "devDescription devDescriptionSize">{devSkill["description"]}</p>
             </div>
           </div>
         </div>
