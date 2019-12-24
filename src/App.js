@@ -10,7 +10,43 @@ import resumeData from './resumeData';
 import comet from './comet-solo-4.png';
 import galaxy from "./cargrid.jpg"
 
+const screenWidth = {
+  "--screenWidth": "1000"
+};
+const screenHeight = {
+  "--screenHeight": "1000"
+};
+
 class App extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = { width: 0, height: 0 };
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions = () => {
+    Object.keys(screenWidth).map(key => {
+      screenWidth[key] = window.innerWidth
+      const value = screenWidth[key];
+      document.documentElement.style.setProperty(key, value);
+    });
+    Object.keys(screenHeight).map(key => {
+      screenHeight[key] = window.innerHeight
+      const value = screenHeight[key];
+      document.documentElement.style.setProperty(key, value);
+    });
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
   render() {
     return (
       <div className = "App">
@@ -26,7 +62,7 @@ class App extends Component {
           <div className="particle particle-4"></div>
         </div>
         <Header resumeData={resumeData}/>
-        <About resumeData={resumeData}/>
+        {/* <About resumeData={resumeData}/> */}
         <Portfolio resumeData={resumeData}/>
         <Footer resumeData={resumeData}/>
 

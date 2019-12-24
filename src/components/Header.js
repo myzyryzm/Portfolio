@@ -23,8 +23,8 @@ export default class Header extends Component {
               </div>
               <div className="banner-text">
                 <div class="retroContainer">
-                  <h1 className = "retroText" data-text="I am Ryan Young">
-                    I am Ryan Young
+                  <h1 className = "retroText" data-text="Ryan Young">
+                    Ryan Young
                   </h1>
                 </div>
                 <ul className="social">

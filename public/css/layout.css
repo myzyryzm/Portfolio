@@ -791,10 +791,10 @@ ul#nav li.current a { color: var(--color-9); }
  .grid2 {
    min-height: 100px;
    min-width: 100px;
-   height: 40vw;
-   width: 80vw;
-   max-height: 350px;
-   max-width: 700px;
+   height: 45vw;
+   width: 90vw;
+   max-height: 450px;
+   max-width: 900px;
    display: grid;
    grid-gap: 0px;
    grid-template-columns: 1fr .1fr 2fr;
@@ -838,7 +838,7 @@ ul#nav li.current a { color: var(--color-9); }
  .gridTitle{
    margin: 0px;
    font-family: var(--font);
-   font-size: 14px;
+   font-size: 16px;
    /* font: 14px/20px 'opensans-semibold', sans-serif; */
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -1340,15 +1340,15 @@ body {
  }
  
  .retroText {
-   display: block;
+   /* display: block; */
    position: relative;
-   font-size: 100px;
-   background: linear-gradient(to bottom, #00f2ff 0%, #e2fbff 50%, #0a343f 51%, #0094f7 100%);
-   /* background-blend-mode: multiply; */
+   /* font-size: 100px; */
+   /* background: linear-gradient(to bottom, #00f2ff 0%, #e2fbff 50%, #0a343f 51%, #0094f7 100%);
+   background-blend-mode: multiply;
    background-size: 10px 100px;
-   background-repeat: repeat;
-   line-height: 1;
-   -webkit-background-clip: text;
+   background-repeat: repeat; */
+   /* line-height: 1; */
+   /* -webkit-background-clip: text; */
    -webkit-text-fill-color: transparent;
    z-index: 1;
    
