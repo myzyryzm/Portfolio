@@ -25,6 +25,8 @@ import emsocLogo from './Images/emsocLogo.png'
 import ucsbLogo from './Images/ucsbLogo.png'
 import learnLogo from './Images/learnLogo.png'
 import evtLogo from './Images/evtLogo.png'
+import githubLogoSmall from './Images/githubLogoSmall.png'
+import linkedinLogo from './Images/linkedinLogo.png'
 
 export default function (skill) {
   switch(skill){
@@ -82,5 +84,9 @@ export default function (skill) {
       return learnLogo
     case "EVT":
       return evtLogo
+    case "Github Small":
+      return githubLogoSmall
+    case "Linkedin":
+      return linkedinLogo
   }
 }

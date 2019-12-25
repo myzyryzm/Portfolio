@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 export default class Header extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
-      <React.Fragment>
-                
+      <React.Fragment>  
         <header id="home">
           <nav id="nav-wrap">
               <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -27,18 +25,6 @@ export default class Header extends Component {
                     Ryan Young
                   </h1>
                 </div>
-                <ul className="social">
-                    {
-                      resumeData.socialLinks && resumeData.socialLinks.map(item =>{
-                        return(
-                                <li key={item.name}>
-                                  <a href={item.url} target="_blank"><i className={item.className}></i></a>
-                                </li>
-                              )
-                            }
-                      )
-                    }
-                </ul>
               </div>
           </div>
 

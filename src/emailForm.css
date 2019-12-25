@@ -1,0 +1,25 @@
+.formParent {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  border-radius: 5%;
+  box-shadow: 3px 2px 3px var(--color-9), -3px 2px 3px var(--color-9), -3px -2px 3px var(--color-9), 3px -2px 3px var(--color-9);
+}
+
+.form-control {
+  width: 70%;
+  max-width: 90%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1%;
+}
+
+.contactTitleSpace {
+  margin-top: 25px;
+  margin-bottom: 80px;
+  font-family: var(--font);
+  top: 40px
+}

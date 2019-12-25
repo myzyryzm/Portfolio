@@ -225,16 +225,20 @@ header .scrolldown a:hover { color: #11ABB0; }
 
 ul#nav {
    min-height: 48px;
-   width: auto;
-
+   width: 30%;
    /* center align the menu */
    text-align: center;
+   align-content: center;
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
 }
 ul#nav li {
    position: relative;
    list-style: none;
    height: 48px;
    display: inline-block;
+   width: 25%
 }
 
 /* Links */
@@ -1096,10 +1100,10 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
+   /* background: #191919; */
    padding-top: 96px;
    padding-bottom: 102px;
-   color: #636363;
+   /* color: #636363; */
 }
 #contact .section-head { margin-bottom: 42px; }
 
@@ -1107,16 +1111,14 @@ call-to-action .button {
 #contact a:hover, #contact a:focus { color: #fff; }
 
 #contact h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #EBEEEE;
-   margin-bottom: 6px;
 }
 #contact h1 span { display: none; }
 #contact h1:before {
    font-family: 'FontAwesome';
-   content: "\f0e0";
+   /* content: "\f0e0"; */
 	padding-right: 10px;
 	font-size: 72px;
    line-height: 72px;
@@ -1140,9 +1142,8 @@ call-to-action .button {
 /* contact form */
 #contact form { margin-bottom: 30px; }
 #contact label {
-   font: 15px/24px var(--font), sans-serif;
-   margin: 12px 0;
-   color: #EBEEEE;
+   font: 24px var(--font), sans-serif;
+   color: white;
 	display: inline-block;
 	float: left;
    width: 26%;
@@ -1150,21 +1151,21 @@ call-to-action .button {
 #contact input,
 #contact textarea,
 #contact select {
-   padding: 18px 20px;
-	color: #eee;
-	background: #373233;
+   color: #eee;
+	background: black;
 	margin-bottom: 42px;
 	border: 0;
 	outline: none;
    font-size: 15px;
    line-height: 24px;
-   width: 65%;
+   border: solid 2px var(--color-9);
+   border-radius: 2%;
 }
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: var(--color-9);
 }
 #contact button.submit {
 	text-transform: uppercase;

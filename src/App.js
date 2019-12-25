@@ -4,8 +4,8 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
-import resumeData from './resumeData';
 import "./flexboxing.css"
+import "./emailForm.css"
 
 const screenWidth = {
   "--screenWidth": "1000"
@@ -57,11 +57,11 @@ class App extends Component {
           <div className="particle particle-3"></div>
           <div className="particle particle-4"></div>
         </div>
-        <Header resumeData={resumeData}/>
+        <Header/>
         <About/>
         <Portfolio/>
+        <ContactUs/>
         <Footer/>
-
       </div>
     );
   }
