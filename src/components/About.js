@@ -58,7 +58,17 @@ export default class About extends Component {
         <div className = "devDescriptionColumn" >
           <p className = "devDescription devDescriptionSize">software engineer who excels at critical thinking and is driven by an everlasting desire to solve problems.  a quick learner who will persevere through whatever challenges that may be encountered when finding solutions.  driven by a desire to innovate and make an impact on the world for the better.</p>
         </div>
-        <a className = "resumeButton resumeFontSize" href = {resume} target = "_blank">Resume</a>
+        <div className = "aboutButtonsParent">
+          <a className = "resumeLogoButton" href = "https://github.com/myzyryzm" target = "_blank">
+            <img src={getLogo("Github Small")} className = "devSkillLogo" />
+          </a>
+          <div className = "resumeButtonParent">
+            <a className = "resumeButton resumeFontSize" href = {resume} target = "_blank">Resume</a>
+          </div>
+          <a className = "resumeLogoButton" href = {"https://linkedin.com/in/mryanyoung"} target = "_blank">
+            <img src={getLogo("Linkedin")} className = "devSkillLogo" />
+          </a>
+        </div>
       </div>
     </div>
 
