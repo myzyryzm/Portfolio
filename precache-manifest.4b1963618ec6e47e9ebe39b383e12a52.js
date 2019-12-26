@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "bcd5d916ead0dcbd43c0",
-    "url": "/Portfolio/static/css/main.60200731.chunk.css"
+    "revision": "23807c670e7d9eb6e5e3",
+    "url": "/Portfolio/static/css/main.76c75384.chunk.css"
   },
   {
-    "revision": "bcd5d916ead0dcbd43c0",
-    "url": "/Portfolio/static/js/main.bcd5d916.chunk.js"
+    "revision": "23807c670e7d9eb6e5e3",
+    "url": "/Portfolio/static/js/main.23807c67.chunk.js"
   },
   {
     "revision": "f1b731c18d17214f27d3",
@@ -128,7 +128,7 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/ryan_young_resume.f10f907a.pdf"
   },
   {
-    "revision": "f60acac6ed9b7a847dc81eda96326e20",
+    "revision": "7584f8bae9abe4b5696f359f0e8c674d",
     "url": "/Portfolio/index.html"
   }
 ];
