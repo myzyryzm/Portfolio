@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
-import {
-  Row,
-  Col,
-  FormGroup
- } from 'reactstrap'
- 
+
+const templateId = 'default'
 export default class ContactUs extends Component {
   constructor(props){
     super(props)
     this.state = {
         form: {
-            subject: "",
+            senderName: "",
             email_address: "",
             message: ""
         },
@@ -19,7 +15,22 @@ export default class ContactUs extends Component {
 
   localSubmit = () => {
     let{form} = this.state
-    form["subject"] = ""
+    var template_params = {
+      "from_email": form["email_address"],
+      "from_name": form["senderName"],
+      "to_name": "Ryan Young",
+      "message_html": form["message"]
+   }
+    window.emailjs.send(
+      'gmail', templateId,
+      template_params
+      ).then(res => {
+        console.log('Email successfully sent!')
+      })
+      // Handle errors here however you like, or use a React error boundary
+      .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
+    
+    form["senderName"] = ""
     form["email_address"] = ""
     form["message"] = ""
     this.setState({form})
@@ -33,15 +44,15 @@ export default class ContactUs extends Component {
   }
   render() {
     const{form} = this.state
-    const{subject, email_address, message} = form
+    const{senderName, email_address, message} = form
     return (
       <section id="contact">
         <div className="formParent">
-          <h1 className="devTitle contactTitleSpace" data-text = "Contact Me">Contact Me</h1>
+          <h1 className="devTitle contactTitleSpace aboutTitleSize" data-text = "Contact Me">Contact Me</h1>
 
           <div className="form-group">
-            <label className="col-form-label label-color" for="inputDefault">Subject</label>
-            <input name="subject" value = {subject} type="text" className="form-control" placeholder="" id="inputDefault" onChange = {this.onChange} />
+            <label className="col-form-label label-color">Your Name</label>
+            <input name="senderName" value = {senderName} type="text" className="form-control" placeholder="" id="inputDefault" onChange = {this.onChange} />
           </div>
 
           <div className="form-group">
@@ -50,7 +61,7 @@ export default class ContactUs extends Component {
           </div>
 
           <div className="form-group">
-            <label className="col-form-label label-color" for="inputDefault">Message</label>
+            <label className="col-form-label label-color">Message</label>
             <textarea name="message" rows="5" columns="10" value = {message} type="text" className="form-control" placeholder="" id="inputDefault" onChange = {this.onChange} />
           </div>
           <br />

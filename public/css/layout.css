@@ -195,7 +195,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: var(--color-9); }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -1117,14 +1117,13 @@ call-to-action .button {
 }
 #contact h1 span { display: none; }
 #contact h1:before {
-   font-family: 'FontAwesome';
-   /* content: "\f0e0"; */
-	padding-right: 10px;
+   /* font-family: 'FontAwesome';
+   padding-right: 10px;
 	font-size: 72px;
    line-height: 72px;
    text-align: left;
    float: left;
-   color: #ebeeee;
+   color: #ebeeee; */
 }
 
 #contact h4 {
