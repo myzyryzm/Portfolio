@@ -30,12 +30,19 @@
   font-size: 62px;
 }
 
+.contactTitleSize {
+  font-size: 52px
+}
+
 @media only screen and (max-width: 1400px){
   .devTitleSize {
     font-size: 40px
   }
   .aboutTitleSize {
     font-size: 60px
+  }
+  .contactTitleSize {
+    font-size: 50px
   }
 }
 
@@ -45,6 +52,9 @@
   }
   .aboutTitleSize {
     font-size: 58px
+  }
+  .contactTitleSize {
+    font-size: 48px
   }
 }
 
@@ -121,6 +131,9 @@
   .aboutTitleSize {
     font-size: 56px
   }
+  .contactTitleSize {
+    font-size: 46px
+  }
 }
 
 @media only screen and (max-width: 650px){
@@ -136,6 +149,9 @@
   .aboutTitleSize {
     font-size: 52px
   }
+  .contactTitleSize {
+    font-size: 42px
+  }
 }
 
 @media only screen and (max-width: 550px){
@@ -150,6 +166,9 @@
   }
   .aboutTitleSize {
     font-size: 48px
+  }
+  .contactTitleSize {
+    font-size: 38px
   }
 }
 
@@ -178,6 +197,9 @@
   .aboutTitleSize {
     font-size: 42px
   }
+  .contactTitleSize {
+    font-size: 32px
+  }
 }
 
 @media only screen and (max-width: 375px){
@@ -198,6 +220,9 @@
   }
   .aboutTitleSize {
     font-size: 36px
+  }
+  .contactTitleSize {
+    font-size: 26px
   }
 }
 
@@ -391,7 +416,7 @@
 }
 
 .logoColumn {
-  height: 100%;
+  max-height: 100px;
   width: 12%;
   margin-left: 2%;
   margin-right: 2%;
@@ -493,7 +518,7 @@
 }
 
 .resumeButtonParent {
-  width: 30%;
+  width: 33%;
   display: block
 }
 
@@ -519,6 +544,36 @@
   font-size: 24px;
 }
 
+@media only screen and (max-width: 800px) { 
+  .resumeFontSize {
+     font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 700px) { 
+  .resumeFontSize {
+    font-size: 20px;
+ }
+}
+
+@media only screen and (max-width: 600px) { 
+  .resumeFontSize {
+    font-size: 18px;
+ }
+}
+
+@media only screen and (max-width: 500px) { 
+  .resumeFontSize {
+    font-size: 16px;
+ }
+}
+
+@media only screen and (max-width: 400px) { 
+  .resumeFontSize {
+    font-size: 14px;
+ }
+}
+
 .resumeButton:hover {
   text-decoration: none;
   background-color: white;
@@ -534,7 +589,7 @@
 }
 
 .resumeLogoButton {
-  width: 30%;
+  width: 33%;
   display: block;
   height: inherit
 }

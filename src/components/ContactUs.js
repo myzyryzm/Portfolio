@@ -48,7 +48,7 @@ export default class ContactUs extends Component {
     return (
       <section id="contact">
         <div className="formParent">
-          <h1 className="devTitle contactTitleSpace aboutTitleSize" data-text = "Contact Me">Contact Me</h1>
+          <h1 className="devTitle contactTitleSpace contactTitleSize" data-text = "Contact Me">Contact Me</h1>
 
           <div className="form-group">
             <label className="col-form-label label-color">Your Name</label>
