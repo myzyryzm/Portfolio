@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "1ae773c358723718efff",
-    "url": "/Portfolio/static/css/main.74902595.chunk.css"
+    "revision": "f9581e39a384f54c09e1",
+    "url": "/Portfolio/static/css/main.0a8581a9.chunk.css"
   },
   {
-    "revision": "1ae773c358723718efff",
-    "url": "/Portfolio/static/js/main.1ae773c3.chunk.js"
+    "revision": "f9581e39a384f54c09e1",
+    "url": "/Portfolio/static/js/main.f9581e39.chunk.js"
   },
   {
-    "revision": "f1b731c18d17214f27d3",
-    "url": "/Portfolio/static/js/1.f1b731c1.chunk.js"
+    "revision": "8efc5cf369fd1186388a",
+    "url": "/Portfolio/static/js/1.8efc5cf3.chunk.js"
   },
   {
     "revision": "3b96116072eb85f5a3a2",
@@ -124,11 +124,23 @@ self.__precacheManifest = [
     "url": "/Portfolio/static/media/linkedinLogo.21d5c1fb.png"
   },
   {
+    "revision": "4ac0c235973f7e1ac364543f948955f5",
+    "url": "/Portfolio/static/media/netcoreLogo.4ac0c235.png"
+  },
+  {
+    "revision": "5873c91986410a6886012fb838f99d31",
+    "url": "/Portfolio/static/media/mobxLogo.5873c919.png"
+  },
+  {
+    "revision": "26cc95f255ccb936d154b43614f61602",
+    "url": "/Portfolio/static/media/typescriptLogo.26cc95f2.png"
+  },
+  {
     "revision": "f10f907afad9542125122c7e076e2f4b",
     "url": "/Portfolio/static/media/ryan_young_resume.f10f907a.pdf"
   },
   {
-    "revision": "c03eb43a403006dbe82320041684ae5d",
+    "revision": "cae132c475f54d0c7fd0fd2f02a31188",
     "url": "/Portfolio/index.html"
   }
 ];
